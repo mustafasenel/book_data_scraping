@@ -41,9 +41,7 @@ Bu proje, kitapyurdu.com adlı web sitesinden kitap verilerini otomatik olarak k
 
 kitapsepeti.com web sitesinden veri kazımak için:
 
-    ```
     python kitapsepeti.com
-    ```
 
 Komutunu çalıştırın. Selenium aracılığıyla web sitesi açılacak ve belirtilen filtrelerle kitap verilerini içeren sayfaya yönlendirilecektir.
 7.Terminal ekranından kazınan veri sayısı, hangi safyada işlem yapıldığı ve sayfa içerisinde hangi elemanda işlem yapıldığı tqdm kütüphanesi ile görselleştirilmiştir.
