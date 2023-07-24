@@ -111,7 +111,8 @@ while True:
     next_page.click()  # Sonraki sayfaya geç
     page_count += 1
 
-    print("yeni sayfaya geçildi, ", "Sayfa Sayısı: ", page_count)
+    print("Yeni sayfaya geçildi")
+    print("Sayfa Sayısı: ", page_count)
     print("Kazınan toplam veri: ", data_count)    
     time.sleep(1)  # Yeni sayfanın yüklenmesini bekle
 

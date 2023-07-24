@@ -42,7 +42,7 @@ Bu proje, kitapyurdu.com adlı web sitesinden kitap verilerini otomatik olarak k
 7.  kitapsepeti.com web sitesinden veri kazımak için:
 
     ```
-    python kitapsepeti.com
+    python kitapsepeti.py
     ```
 
     Komutlarını çalıştırın. Selenium aracılığıyla web sitesi açılacak ve belirtilen filtrelerle kitap verilerini içeren sayfaya yönlendirilecektir.
