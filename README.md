@@ -33,20 +33,20 @@ Bu proje, kitapyurdu.com adlı web sitesinden kitap verilerini otomatik olarak k
 3.  Proje dosyasındaki `webdriver.Chrome()` satırında kullanacağınız web tarayıcısını belirleyin. Bu projede Chrome tarayıcısı kullanılmıştır. Bu nedenle sisteminizde Chrome web tarayıcısı ve uyumlu sürücüsü yüklü olmalıdır.
 4.  "MongoClient" fonksiyonu ile MongoDB bağlantısı kurun. Bağlantı adresi ("mongodb://localhost:27017/") projedeki adresinizle uyumlu olacak şekilde düzenlenmelidir. Veritabanı adı ve koleksiyon adı da belirtilmelidir.
 5.  "base_url" değişkenine belirlenen kategorideki tüm kitapların web sitesi adresini atayın.
-6.kitapyurdu.com web sitesinden veri kazımak için:
+6.  kitapyurdu.com web sitesinden veri kazımak için:
         
     ```
     python kitapyurdu.py
     ```
 
-    kitapsepeti.com web sitesinden veri kazımak için:
+7.  kitapsepeti.com web sitesinden veri kazımak için:
 
-        ```
-        python kitapsepeti.com
-        ```
+    ```
+    python kitapsepeti.com
+    ```
 
-    Komutunu çalıştırın. Selenium aracılığıyla web sitesi açılacak ve belirtilen filtrelerle kitap verilerini içeren sayfaya yönlendirilecektir.
-7.Terminal ekranından kazınan veri sayısı, hangi safyada işlem yapıldığı ve sayfa içerisinde hangi elemanda işlem yapıldığı tqdm kütüphanesi ile görselleştirilmiştir.
+    Komutlarını çalıştırın. Selenium aracılığıyla web sitesi açılacak ve belirtilen filtrelerle kitap verilerini içeren sayfaya yönlendirilecektir.
+8.  Terminal ekranından kazınan veri sayısı, hangi safyada işlem yapıldığı ve sayfa içerisinde hangi elemanda işlem yapıldığı tqdm kütüphanesi ile görselleştirilmiştir.
 
 ## Not
 
