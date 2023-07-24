@@ -6,12 +6,15 @@
 
 Bu proje, kitapyurdu.com adlı web sitesinden kitap verilerini otomatik olarak kazımak (web scraping) ve elde edilen verileri MongoDB veritabanına kaydetmek için Python dilinde geliştirilmiştir.
 
+- data/ klasörü içerisinde her iki web sitesinden kazınan bilim-mühendislik kategorisi altındaki tüm kitapların verileri csv formatında sunulmuştur.
+
 ## İşlev ve Özellikler
 
 - kitapyurdu.com ve kitapsepeti.com sitesinde yer alan belirlenen kategorideki tüm kitapların verilerini otomatik olarak kazır ve bu verileri MongoDB veritabanına kaydeder.
-- Kazınan kitap verileri, kitap başlığı, yayınevi, yazar, fiyat, sayfa sayısı, dil ve ISBN numarası gibi önemli bilgileri içerir.
+- Kazınan kitap verileri, kitap başlığı, yayınevi, yazar, fiyat, sayfa sayısı, kapak resmi ve ISBN numarası gibi önemli bilgileri içerir.
 - Web scraping işlemleri için Selenium kütüphanesi kullanılır. Bu sayede, web tarayıcısı otomasyonu sağlanarak sayfalar arasında gezinme ve içeriklere erişme işlemleri gerçekleştirilir.
 - Veriler, MongoDB veritabanına pymongo kütüphanesi ile kaydedilir.
+- Kod, hatalara karşı korumak için `try-except` blokları kullanır ve veri çekilemediği durumlarda devam etmeyi sağlar.
 - Ayrıca tqdm kütüphanesi ile terminal ekranında veri kazıma işlemi kolay takip edilir.
 
 ## Kullanılan Kütüphaneler ve Gereksinimler
@@ -31,7 +34,7 @@ Bu proje, kitapyurdu.com adlı web sitesinden kitap verilerini otomatik olarak k
     ```
 
 3.  Proje dosyasındaki `webdriver.Chrome()` satırında kullanacağınız web tarayıcısını belirleyin. Bu projede Chrome tarayıcısı kullanılmıştır. Bu nedenle sisteminizde Chrome web tarayıcısı ve uyumlu sürücüsü yüklü olmalıdır.
-4.  "MongoClient" fonksiyonu ile MongoDB bağlantısı kurun. Bağlantı adresi ("mongodb://localhost:27017/") projedeki adresinizle uyumlu olacak şekilde düzenlenmelidir. Veritabanı adı ve koleksiyon adı da belirtilmelidir.
+4.  "MongoClient" fonksiyonu ile MongoDB bağlantısı kurun. Bağlantı adresi `("mongodb://localhost:27017/")` projedeki adresinizle uyumlu olacak şekilde düzenlenmelidir. Veritabanı adı ve koleksiyon adı da belirtilmelidir.
 5.  "base_url" değişkenine belirlenen kategorideki tüm kitapların web sitesi adresini atayın.
 6.  kitapyurdu.com web sitesinden veri kazımak için:
         
