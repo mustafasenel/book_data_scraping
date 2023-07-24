@@ -6,7 +6,7 @@
 
 Bu proje, kitapyurdu.com adlı web sitesinden kitap verilerini otomatik olarak kazımak (web scraping) ve elde edilen verileri MongoDB veritabanına kaydetmek için Python dilinde geliştirilmiştir.
 
-*`data/`klasörü içerisinde her iki web sitesinden kazınan bilim-mühendislik kategorisi altındaki tüm kitapların verileri csv formatında sunulmuştur.*
+*`data/` klasörü içerisinde her iki web sitesinden kazınan bilim-mühendislik kategorisi altındaki tüm kitapların verileri csv formatında sunulmuştur.*
 
 ## İşlev ve Özellikler
 
